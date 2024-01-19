@@ -2,8 +2,13 @@
   "name": "modulo-4",
   "version": "1.0.0",
   "description": "",
+<<<<<<< HEAD
   "type": "module",
   "main": "new.js",
+=======
+  "main": "index.js",
+  "type": "module",
+>>>>>>> 0970dd26eab01b930fc9c90e8d1b01618eeb2b1a
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
