@@ -30,7 +30,7 @@ router.get('/busca/:cnpj', async (req, res) => {
   try{
       const cnjJson = await CnpjController.getCnpj(req.params.cnpj, res);
       res.status(200).send(cnjJson);
-
+      console.log(cnjJson);
   } catch(error){
     res.status(500).send({ error: 'Internal server error.' })
   }

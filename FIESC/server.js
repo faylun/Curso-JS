@@ -1,6 +1,5 @@
 import app from './app.js'
 
-const PORT = 3333
-IP = 'collector.digitro.com.br'
+const PORT = 3000
 
-app.listen(PORT, IP, () => console.log(`Server listening on PORT ${PORT}...`))
+app.listen(PORT, () => console.log(`Server listening on PORT ${PORT}...`))
