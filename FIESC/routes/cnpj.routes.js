@@ -26,7 +26,7 @@ router.get('/formatedjson/', async (req, res) => {
 
 
 // define uma rota ' /busca ' para fazer requisições GET. Pega o parâmetro passado na url e manda para o CnpjController.
-router.get('/busca/:cnpj', async (req, res) => {
+router.get('/busca/', async (req, res) => {
   try{
       const cnjJson = await CnpjController.getCnpj(req.params.cnpj, res);
       res.status(200).send(cnjJson);
