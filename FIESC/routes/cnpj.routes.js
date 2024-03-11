@@ -9,7 +9,7 @@ import { getHtml } from '../utils/cnpj-utils.js'
 const router = express.Router();
 
 // define uma rota ' /formatedJson ' para fazer requisições GET. Pega o parâmetro passado na url e manda para o CnpjController.
-router.get('/formatedjson/:cnpj', async (req, res) => {
+router.get('/formatedjson/', async (req, res) => {
     try{
       const cnjJson = await CnpjController.getCnpj(req.params.cnpj, res);
 
